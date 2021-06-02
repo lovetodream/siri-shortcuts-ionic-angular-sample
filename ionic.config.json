@@ -1,0 +1,7 @@
+{
+  "name": "siri-shortcuts-test-2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
