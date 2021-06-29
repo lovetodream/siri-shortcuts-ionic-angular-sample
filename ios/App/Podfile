@@ -12,7 +12,7 @@ def capacitor_pods
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
-  pod 'CapacitorPluginSiriShorts', :path => '../../../Documents/GitHub/capacitor-plugin-siri-shortcuts'
+  pod 'CapacitorPluginSiriShorts', :path => '../../node_modules/capacitor-plugin-siri-shorts'
 end
 
 target 'App' do
