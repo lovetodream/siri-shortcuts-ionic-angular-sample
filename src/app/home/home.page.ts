@@ -30,6 +30,19 @@ export class HomePage {
     toast.present();
   }
 
+  async presentAction() {
+    const id = 1;
+    await SiriShortcuts.present({
+      persistentIdentifier: `test${id}`,
+      title: `Test ${id}`
+    }).then(async () => {
+      (await this.toastController.create({ header: 'Success', message: 'User saved donation' })).present();
+    }).catch(async (error) => {
+      console.log(error);
+      (await this.toastController.create({ header: 'Error', message: error })).present();
+    });
+  }
+
   async deleteOne(id: number) {
     await SiriShortcuts.delete({identifiers: [`test${id}`]});
 
